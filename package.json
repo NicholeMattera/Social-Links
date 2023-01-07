@@ -1,0 +1,19 @@
+{
+  "author": "Nichole Mattera",
+  "description": "Social Links for I'm a Nickel",
+  "devDependencies": {
+    "vite": "^4.0.4",
+    "vite-plugin-minify": "^1.5.2"
+  },
+  "license": "ISC",
+  "name": "social-links",
+  "repository": {
+    "type": "git",
+    "url": "git@git.nicholemattera.com:NicholeMattera/Social-Links.git"
+  },
+  "scripts": {
+    "build": "vite build",
+    "serve": "vite"
+  },
+  "version": "1.1.0"
+}
