@@ -12,15 +12,49 @@
 
         <title>I'm a Nickel</title>
 
-        <script src="https://kit.fontawesome.com/096e7c40e5.js" crossorigin="anonymous"></script>
-
         <style>
+            @font-face {
+                font-family: 'Font Awesome 6 Pro';
+                font-style: normal;
+                font-weight: 900;
+                font-display: block;
+                src: url("./fonts/fa-solid-900.woff2") format("woff2"), url("./fonts/fa-solid-900.ttf") format("truetype");
+            }
+
+            .fas {
+                -moz-osx-font-smoothing: grayscale;
+                -webkit-font-smoothing: antialiased;
+                display: var(--fa-display, inline-block);
+                font-family: 'Font Awesome 6 Pro';
+                font-style: normal;
+                font-variant: normal;
+                font-weight: 900;
+                line-height: 1;
+                text-rendering: auto;
+            }
+
+            .fa-ext::before {
+                content: "\f08e";
+            }
+
+            .fa-sr-only {
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                padding: 0;
+                margin: -1px;
+                overflow: hidden;
+                clip: rect(0, 0, 0, 0);
+                white-space: nowrap;
+                border-width: 0;
+            }
+
             @font-face {
                 font-display: swap;
                 font-family: Inter;
                 font-style: normal;
                 font-weight: 500;
-                src: url(./fonts/Inter-Medium.ttf);
+                src: url("./fonts/inter-medium.woff2") format("woff2"), url("./fonts/inter-medium.ttf") format("truetype");
             }
 
             @font-face {
@@ -28,7 +62,7 @@
                 font-family: Inter;
                 font-style: normal;
                 font-weight: 700;
-                src: url(./fonts/Inter-Bold.ttf);
+                src: url("./fonts/inter-bold.woff2") format("woff2"), url("./fonts/inter-bold.ttf") format("truetype");
             }
 
             html, body {
@@ -147,49 +181,49 @@
                         <a href="https://discord.com/users/180833022025793537" target="_blank">
                             Discord
                             <span class="fa-sr-only">Opens in new window</span>
-                            <span class="fa-solid fa-arrow-up-right-from-square"></span>
+                            <span class="fas fa-ext"></span>
                         </a>
                     </li>
                     <li>
                         <a href="https://na.finalfantasyxiv.com/lodestone/character/12012340/" target="_blank">
                             Final Fantasy XIV
                             <span class="fa-sr-only">Opens in new window</span>
-                            <span class="fa-solid fa-arrow-up-right-from-square"></span>
+                            <span class="fas fa-ext"></span>
                         </a>
                     </li>
                     <li>
                         <a href="https://www.instagram.com/im.a.nickel/" target="_blank">
                             Instagram
                             <span class="fa-sr-only">Opens in new window</span>
-                            <span class="fa-solid fa-arrow-up-right-from-square"></span>
+                            <span class="fas fa-ext"></span>
                         </a>
                     </li>
                     <li>
                         <a href="https://www.reddit.com/user/im_a_nickel" target="_blank">
                             Reddit
                             <span class="fa-sr-only">Opens in new window</span>
-                            <span class="fa-solid fa-arrow-up-right-from-square"></span>
+                            <span class="fas fa-ext"></span>
                         </a>
                     </li>
                     <li>
                         <a href="https://steamcommunity.com/id/im_a_nickel/" target="_blank">
                             Steam
                             <span class="fa-sr-only">Opens in new window</span>
-                            <span class="fa-solid fa-arrow-up-right-from-square"></span>
+                            <span class="fas fa-ext"></span>
                         </a>
                     </li>
                     <li>
                         <a href="https://www.twitch.tv/im_a_nickel" target="_blank">
                             Twitch
                             <span class="fa-sr-only">Opens in new window</span>
-                            <span class="fa-solid fa-arrow-up-right-from-square"></span>
+                            <span class="fas fa-ext"></span>
                         </a>
                     </li>
                     <li>
                         <a href="https://www.youtube.com/channel/UCOL-D4b8Fqcu3tFPs5GzEZg" target="_blank">
                             YouTube
                             <span class="fa-sr-only">Opens in new window</span>
-                            <span class="fa-solid fa-arrow-up-right-from-square"></span>
+                            <span class="fas fa-ext"></span>
                         </a>
                     </li>
                 </ul>
