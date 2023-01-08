@@ -6,13 +6,13 @@
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
         <meta name="description" content="Social Links for I'm a Nickel">
 
-        <meta property="og:title" content="I'm a Nickel | Links">
+        <meta property="og:title" content="I'm a Nickel">
         <meta property="og:description" content="Social Links for I'm a Nickel">
         <meta property="og:url" content="https://links.nickel.place">
 
-        <meta property="profile:username" content="I'm a Nickel"/>
+        <title>I'm a Nickel</title>
 
-        <title>I'm a Nickel | Links</title>
+        <script src="https://kit.fontawesome.com/096e7c40e5.js" crossorigin="anonymous"></script>
 
         <style>
             @font-face {
@@ -85,22 +85,52 @@
 
             a {
                 border: 2px solid #FFF;
+                border-radius: 3px;
                 color: #FFF;
                 display: block;
                 font-weight: 500;
                 padding: 16px 44px;
+                position: relative;
                 text-decoration: none;
                 transition: background-color 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+            }
+
+            a svg {
+                position: absolute;
+                right: 16px;
             }
 
             a:hover, a:focus {
                 background: #FFF;
                 color: #212121;
-                outline: none;
             }
 
             a:focus {
-                outline: thin dotted;
+                outline-color: #FFF;
+                outline-offset: 2px;
+                outline-style: solid;
+                outline-width: 2px;
+            }
+
+            @media (prefers-color-scheme: light) {
+                html, body {
+                    background: #DEDEDE;
+                    color: #000;
+                }
+
+                a {
+                    border: 2px solid #000;
+                    color: #000;
+                }
+
+                a:hover, a:focus {
+                    background: #000;
+                    color: #DEDEDE;
+                }
+
+                a:focus {
+                    outline-color: #000;
+                }
             }
         </style>
     </head>
@@ -108,31 +138,59 @@
         <div class="container">
             <div class="body">
                 <header>
-                    <img src="./images/profile.webp" alt="I'm a Nickel's Profile Photo" />
-                    <h1>I'm a Nickel</h1>
+                    <img src="./images/profile.webp" alt="I'm a Nickel's VTuber model on top of demisexual, asexual, and panromantic flags" />
+                    <h1>I'm a Nickel's Social Links</h1>
                 </header>
 
                 <ul>
                     <li>
-                        <a href="https://discord.com/users/180833022025793537" target="_blank">Discord</a>
+                        <a href="https://discord.com/users/180833022025793537" target="_blank">
+                            Discord
+                            <span class="fa-sr-only">Opens in new window</span>
+                            <span class="fa-solid fa-arrow-up-right-from-square"></span>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://na.finalfantasyxiv.com/lodestone/character/12012340/" target="_blank">Final Fantasy XIV</a>
+                        <a href="https://na.finalfantasyxiv.com/lodestone/character/12012340/" target="_blank">
+                            Final Fantasy XIV
+                            <span class="fa-sr-only">Opens in new window</span>
+                            <span class="fa-solid fa-arrow-up-right-from-square"></span>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/im.a.nickel/" target="_blank">Instagram</a>
+                        <a href="https://www.instagram.com/im.a.nickel/" target="_blank">
+                            Instagram
+                            <span class="fa-sr-only">Opens in new window</span>
+                            <span class="fa-solid fa-arrow-up-right-from-square"></span>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.reddit.com/user/im_a_nickel" target="_blank">Reddit</a>
+                        <a href="https://www.reddit.com/user/im_a_nickel" target="_blank">
+                            Reddit
+                            <span class="fa-sr-only">Opens in new window</span>
+                            <span class="fa-solid fa-arrow-up-right-from-square"></span>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://steamcommunity.com/id/im_a_nickel/" target="_blank">Steam</a>
+                        <a href="https://steamcommunity.com/id/im_a_nickel/" target="_blank">
+                            Steam
+                            <span class="fa-sr-only">Opens in new window</span>
+                            <span class="fa-solid fa-arrow-up-right-from-square"></span>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.twitch.tv/im_a_nickel" target="_blank">Twitch</a>
+                        <a href="https://www.twitch.tv/im_a_nickel" target="_blank">
+                            Twitch
+                            <span class="fa-sr-only">Opens in new window</span>
+                            <span class="fa-solid fa-arrow-up-right-from-square"></span>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.youtube.com/channel/UCOL-D4b8Fqcu3tFPs5GzEZg" target="_blank">YouTube</a>
+                        <a href="https://www.youtube.com/channel/UCOL-D4b8Fqcu3tFPs5GzEZg" target="_blank">
+                            YouTube
+                            <span class="fa-sr-only">Opens in new window</span>
+                            <span class="fa-solid fa-arrow-up-right-from-square"></span>
+                        </a>
                     </li>
                 </ul>
             </div>
