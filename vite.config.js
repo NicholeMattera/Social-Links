@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
-import { ViteMinifyPlugin } from 'vite-plugin-minify'
+import { createHtmlPlugin } from 'vite-plugin-html'
+import data from './data.json';
 
 export default defineConfig({
     build: {
@@ -8,7 +9,12 @@ export default defineConfig({
         outDir: '../dist'
     },
     plugins: [
-        ViteMinifyPlugin({})
+        createHtmlPlugin({
+            minify: true,
+            inject: {
+                data
+            }
+        })
     ],
     publicDir: '../public',
     root: 'src'

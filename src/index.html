@@ -4,235 +4,46 @@
         <meta charset="UTF-8">
 
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
-        <meta name="description" content="Social Links for I'm a Nickel">
+        <meta name="description" content="<%- description %>">
         <meta name="theme-color" content="#4A148C"/>
         <meta name="theme-color" media="(prefers-color-scheme: light)" content="#E1BEE7"/>
         <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#4A148C"/>
 
-        <meta property="og:title" content="I'm a Nickel">
-        <meta property="og:description" content="Social Links for I'm a Nickel">
+        <meta property="og:title" content="<%- title %>">
+        <meta property="og:description" content="<%- description %>">
         <meta property="og:url" content="https://links.nickel.place">
 
         <link rel="apple-touch-icon" href="/icons/icon-192.png">
         <link rel="manifest" href="/manifest.json">
 
-        <title>I'm a Nickel</title>
+        <title><%- title %></title>
 
         <style>
-            @font-face {
-                font-family: 'Font Awesome 6 Pro';
-                font-style: normal;
-                font-weight: 900;
-                font-display: block;
-                src: url("./fonts/fa-solid-900.woff2") format("woff2"), url("./fonts/fa-solid-900.ttf") format("truetype");
-            }
-
-            .fas {
-                -moz-osx-font-smoothing: grayscale;
-                -webkit-font-smoothing: antialiased;
-                display: var(--fa-display, inline-block);
-                font-family: 'Font Awesome 6 Pro';
-                font-style: normal;
-                font-variant: normal;
-                font-weight: 900;
-                line-height: 1;
-                text-rendering: auto;
-            }
-
-            .fa-ext::before {
-                content: "\f08e";
-            }
-
-            .fa-sr-only {
-                position: absolute;
-                width: 1px;
-                height: 1px;
-                padding: 0;
-                margin: -1px;
-                overflow: hidden;
-                clip: rect(0, 0, 0, 0);
-                white-space: nowrap;
-                border-width: 0;
-            }
-
-            @font-face {
-                font-display: swap;
-                font-family: Inter;
-                font-style: normal;
-                font-weight: 500;
-                src: url("./fonts/inter-medium.woff2") format("woff2"), url("./fonts/inter-medium.ttf") format("truetype");
-            }
-
-            @font-face {
-                font-display: swap;
-                font-family: Inter;
-                font-style: normal;
-                font-weight: 700;
-                src: url("./fonts/inter-bold.woff2") format("woff2"), url("./fonts/inter-bold.ttf") format("truetype");
-            }
-
-            html, body {
-                background: #212121;
-                color: #FFF;
-                font-family: Inter, Arial, Helvetica, sans-serif;
-                margin: 0;
-                padding: 0;
-                text-align: center;
-            }
-
-            .container {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-                padding: 64px 16px;
-            }
-
-            .body {
-                max-width: 680px;
-                width: 100%;
-            }
-
-            header {
-                margin-bottom: 32px;
-            }
-
-            img {
-                border-radius: 50%;
-                height: 96px;
-                width: 96px;
-            }
-
-            h1 {
-                font-size: 20px;
-                font-weight: 700;
-                line-height: 1.5;
-            }
-
-            ul {
-                list-style: none;
-                margin: 0;
-                padding: 0;
-            }
-
-            li {
-                display: block;
-                margin-bottom: 16px;
-            }
-
-            li:last-child {
-                margin-bottom: 0;
-            }
-
-            a {
-                border: 2px solid #FFF;
-                border-radius: 3px;
-                color: #FFF;
-                display: block;
-                font-weight: 500;
-                padding: 16px 44px;
-                position: relative;
-                text-decoration: none;
-                transition: background-color 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
-            }
-
-            a span.fas {
-                position: absolute;
-                right: 16px;
-            }
-
-            a:hover, a:focus {
-                background: #FFF;
-                color: #212121;
-            }
-
-            a:focus {
-                outline-color: #FFF;
-                outline-offset: 2px;
-                outline-style: solid;
-                outline-width: 2px;
-            }
-
-            @media (prefers-color-scheme: light) {
-                html, body {
-                    background: #DEDEDE;
-                    color: #000;
-                }
-
-                a {
-                    border: 2px solid #000;
-                    color: #000;
-                }
-
-                a:hover, a:focus {
-                    background: #000;
-                    color: #DEDEDE;
-                }
-
-                a:focus {
-                    outline-color: #000;
-                }
-            }
+            @import url('./css/font-awesome.css');
+            @import url('./css/fonts.css');
+            @import url('./css/main.css');
+            @import url('./css/light.css');
         </style>
     </head>
     <body>
         <div class="container">
             <div class="body">
                 <header>
-                    <img src="./images/profile.webp" alt="I'm a Nickel's VTuber model on top of demisexual, asexual, and panromantic flags">
-                    <h1>I'm a Nickel's Social Links</h1>
+                    <img src="./images/profile.webp" alt="<%- imageAlt %>">
+                    <h1><%- description %></h1>
                 </header>
 
                 <main>
                     <ul>
+                        <% links.forEach(function(link) { %>
                         <li>
-                            <a href="https://discord.com/users/180833022025793537" target="_blank">
-                                Discord
+                            <a href="<%- link.url %>" target="_blank">
+                                <%- link.title %>
                                 <span class="fa-sr-only">Opens in new window</span>
                                 <span class="fas fa-ext"></span>
                             </a>
                         </li>
-                        <li>
-                            <a href="https://na.finalfantasyxiv.com/lodestone/character/12012340/" target="_blank">
-                                Final Fantasy XIV
-                                <span class="fa-sr-only">Opens in new window</span>
-                                <span class="fas fa-ext"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/im.a.nickel/" target="_blank">
-                                Instagram
-                                <span class="fa-sr-only">Opens in new window</span>
-                                <span class="fas fa-ext"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.reddit.com/user/im_a_nickel" target="_blank">
-                                Reddit
-                                <span class="fa-sr-only">Opens in new window</span>
-                                <span class="fas fa-ext"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://steamcommunity.com/id/im_a_nickel/" target="_blank">
-                                Steam
-                                <span class="fa-sr-only">Opens in new window</span>
-                                <span class="fas fa-ext"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.twitch.tv/im_a_nickel" target="_blank">
-                                Twitch
-                                <span class="fa-sr-only">Opens in new window</span>
-                                <span class="fas fa-ext"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.youtube.com/channel/UCOL-D4b8Fqcu3tFPs5GzEZg" target="_blank">
-                                YouTube
-                                <span class="fa-sr-only">Opens in new window</span>
-                                <span class="fas fa-ext"></span>
-                            </a>
-                        </li>
+                        <% }); %>
                     </ul>
                 </main>
             </div>
