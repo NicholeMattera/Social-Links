@@ -1,6 +1,6 @@
 {
   "author": "Nichole Mattera",
-  "description": "Social Links for I'm a Nickel",
+  "description": "Social Links",
   "devDependencies": {
     "vite": "^4.0.4",
     "vite-plugin-html": "^3.2.0"
@@ -12,8 +12,11 @@
     "url": "git@git.nicholemattera.com:NicholeMattera/Social-Links.git"
   },
   "scripts": {
-    "build": "vite build",
-    "serve": "vite"
+    "build:nicholemattera": "npm run build -w packages/nicholemattera",
+    "build:nickel": "npm run build -w packages/nickel",
+    "start:nicholemattera": "npm run start -w packages/nicholemattera",
+    "start:nickel": "npm run start -w packages/nickel"
   },
-  "version": "1.2.5"
+  "version": "1.0.0",
+  "workspaces": ["./packages/*"]
 }

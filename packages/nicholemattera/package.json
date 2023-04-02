@@ -1,0 +1,11 @@
+{
+  "author": "Nichole Mattera",
+  "description": "Social Links for Nichole \"Nickel\" Mattera",
+  "license": "ISC",
+  "name": "nicholemattera",
+  "scripts": {
+    "build": "vite build",
+    "start": "vite"
+  },
+  "version": "1.0.0"
+}

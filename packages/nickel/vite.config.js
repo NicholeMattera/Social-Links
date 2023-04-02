@@ -6,7 +6,7 @@ export default defineConfig({
     build: {
         copyPublicDir: true,
         emptyOutDir: true,
-        outDir: '../dist'
+        outDir: '../../nickel/dist'
     },
     plugins: [
         createHtmlPlugin({
@@ -16,6 +16,6 @@ export default defineConfig({
             }
         })
     ],
-    publicDir: '../public',
-    root: 'src'
+    publicDir: '../../nickel/public',
+    root: '../shared/src'
 })

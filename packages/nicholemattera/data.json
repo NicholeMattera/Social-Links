@@ -1,0 +1,32 @@
+{
+    "title": "Nichole &quot;Nickel&quot; Mattera",
+    "description": "Social Links for Nichole &quot;Nickel&quot; Mattera",
+    "image": "/images/profile.webp",
+    "imageAlt": "Selfie of Nichole Mattera",
+    "links": [
+        {
+            "title": "GitHub",
+            "url": "https://github.com/NicholeMattera"
+        },
+        {
+            "title": "Instagram - Art & Photography",
+            "url": "https://instagram.com/nichole.makes/"
+        },
+        {
+            "title": "Instagram - Cats",
+            "url": "https://instagram.com/sif_tauriel_ferdinand_and_chet/"
+        },
+        {
+            "title": "Instagram - Climbing",
+            "url": "https://instagram.com/nichole.climbs/"
+        },
+        {
+            "title": "LinkedIn",
+            "url": "https://linkedin.com/in/nicholemattera"
+        },
+        {
+            "title": "Portfolio",
+            "url": "https://git.nicholemattera.com/"
+        }
+    ]
+}

@@ -1,6 +1,7 @@
 {
     "title": "I'm a Nickel",
     "description": "Social Links for I'm a Nickel",
+    "image": "/images/profile.webp",
     "imageAlt": "I'm a Nickel's VTuber model on top of demisexual, asexual, and panromantic flags",
     "links": [
         {
@@ -10,10 +11,6 @@
         {
             "title": "Final Fantasy XIV",
             "url": "https://na.finalfantasyxiv.com/lodestone/character/12012340/"
-        },
-        {
-            "title": "Instagram",
-            "url": "https://www.instagram.com/im.a.nickel/"
         },
         {
             "title": "Reddit",
